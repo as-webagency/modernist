@@ -1,0 +1,37 @@
+.header
+    padding: 40px 0 20px
+    &--bg
+        border-top: 5px solid $lightGreen
+        background-color: $darkRedBg
+    &__content
+        +flex-wrap
+        justify-content: space-between
+    &__logo
+        .custom
+            &-logo
+                &-link
+                    max-width: 183px
+                    display: block
+    &__nav
+        margin-top: 3px
+.nav
+    &-list
+        +flex-wrap
+        &__item
+            margin-right: 10px
+            &:last-child
+                margin-right: 0
+        &__link
+            +normal
+            font-size: 13px
+            color: $white
+            line-height: 16px
+            background-color: transparent
+            border-radius: 10px
+            padding: 10px 16px
+            text-transform: uppercase
+            transition: all .4s
+            +db
+            &:hover
+                color: $white
+                background-color: $lightGreen

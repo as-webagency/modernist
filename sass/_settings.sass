@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after
+    outline: none
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    border: 0
+body, html
+    height: 100%
+body
+    font-family: 'Georgia', Arial, Helvetica, Helvetica Neue, sans-serif
+    font-size: 16px
+    font-weight: normal
+.container
+    max-width: 990px
+    padding: 0 15px
+    margin: 0 auto
+ul, ol
+    list-style: none
+a,
+a:hover
+    text-decoration: none
+picture
+    +db
+    img
+        max-width: 100%
+        +db
+        +fit
+img
+    max-width: 100%
+    +db
+    +fit
+button
+    cursor: pointer
+    +db
+.d
+    &-block
+        +db
+    &-none
+        +dn
+    &-flex
+        +df
